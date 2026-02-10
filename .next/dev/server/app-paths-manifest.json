@@ -1,4 +1,4 @@
 {
-  "/api/upload-url/route": "app/api/upload-url/route.js",
-  "/page": "app/page.js"
+  "/police-dashboard/page": "app/police-dashboard/page.js",
+  "/police-login/page": "app/police-login/page.js"
 }

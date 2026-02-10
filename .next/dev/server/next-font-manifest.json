@@ -1,6 +1,9 @@
 {
   "app": {
-    "[project]/app/page": [
+    "[project]/app/police-dashboard/page": [
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/app/police-login/page": [
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     ]
   },

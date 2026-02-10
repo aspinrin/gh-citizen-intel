@@ -1,4 +1,3 @@
-[00:00:02.347] Server  LOG     ✓ Ready in 1685ms
-[00:00:10.524] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:24.609] Browser ERROR   {}
-[00:10:45.180] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.978] Server  LOG     ✓ Ready in 1302ms
+[00:00:07.759] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:36.664] Browser WARN    GoTrueClient@sb-tqhmxxozoigivyeonkiz-auth-token:1 (2.95.3) 2026-02-10T17:53:39.759Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
