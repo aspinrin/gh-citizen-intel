@@ -8,6 +8,10 @@ export default function CitizenPortal() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [uploadStatus, setUploadStatus] = useState('');
+  const AGENCY_NAME = process.env.NEXT_PUBLIC_AGENCY_NAME || "Police Service";
+  const COUNTRY_NAME = process.env.NEXT_PUBLIC_COUNTRY_NAME || "Ghana";
+  const TWITTER_LINK = process.env.NEXT_PUBLIC_TWITTER_LINK || "#";
+  const FB_LINK = process.env.NEXT_PUBLIC_FACEBOOK_LINK || "#";
   
   // Separate State for Images and Videos
   const [imageFiles, setImageFiles] = useState<File[]>([]);
@@ -137,7 +141,7 @@ export default function CitizenPortal() {
             <p className="text-sm text-slate-500 mb-4">Follow updates on verified operations:</p>
             <div className="flex justify-center gap-4">
                <a 
-                 href="https://www.facebook.com/GhPoliceService" 
+                 href={FB_LINK}
                  target="_blank" 
                  rel="noopener noreferrer"
                  className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
@@ -145,7 +149,7 @@ export default function CitizenPortal() {
                  Facebook
                </a>
                <a 
-                 href="https://twitter.com/GhPoliceService" 
+                 href={TWITTER_LINK}
                  target="_blank" 
                  rel="noopener noreferrer"
                  className="px-4 py-2 bg-black border border-slate-600 text-white rounded-lg text-sm font-medium hover:bg-slate-900 transition-colors"
@@ -172,7 +176,7 @@ export default function CitizenPortal() {
         <div className="max-w-3xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Shield className="w-6 h-6 text-yellow-500" />
-            <span className="font-bold tracking-wider">GH-INTEL</span>
+            <span className="font-bold tracking-wider">{COUNTRY_NAME}-INTEL</span>
           </div>
           {/* RESTORED: Anonymous Label */}
           <div className="flex items-center gap-2 text-xs text-slate-400">
